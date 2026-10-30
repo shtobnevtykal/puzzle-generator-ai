@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Puzzle Trainer</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Chess Puzzle Trainer</h1>
+
+    <div id="board" data-fen="{{ fen }}" data-solution="{{ solution }}"></div>
+    <p id="feedback"></p>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
